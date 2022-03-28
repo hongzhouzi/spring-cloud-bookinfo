@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-boot-admin
+  cloud:
+    nacos:
+      discovery:
+        server-addr: xxx
+        namespace: xxx
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

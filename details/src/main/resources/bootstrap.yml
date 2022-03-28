@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: xxx
+  cloud:
+    nacos:
+      discovery:
+        server-addr: xxx
+        namespace: xxx
+      config:
+        server-addr: xxx
+        namespace: xxx
+        name: details.yaml
+        file-extension: yaml
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"

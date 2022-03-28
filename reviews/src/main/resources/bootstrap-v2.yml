@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: reviews
+  cloud:
+    nacos:
+      discovery:
+        server-addr: xxx
+        namespace: xxx
+      config:
+        server-addr: xxx
+        namespace: xxx
+        name: reviews.yaml
+        file-extension: yaml
+
+ratings:
+  enabled: true
+  server-addr: http://ratings
+  color: red
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
