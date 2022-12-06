@@ -2,7 +2,7 @@ package sample;
 
 import java.io.Serializable;
 
-public class Details implements Serializable {
+public class Detail implements Serializable {
 
     private static final long serialVersionUID = 1L;
     private int id;
@@ -17,9 +17,9 @@ public class Details implements Serializable {
     private String title;
     private String descriptionHTML;
 
-    public Details(int id, String author, int year, String type, int pages,
-            String publisher, String language, String ISBN_10, String ISBN_13, String title,
-            String descriptionHTML) {
+    public Detail(int id, String author, int year, String type, int pages,
+                  String publisher, String language, String ISBN_10, String ISBN_13, String title,
+                  String descriptionHTML) {
         this.id = id;
         this.author = author;
         this.year = year;

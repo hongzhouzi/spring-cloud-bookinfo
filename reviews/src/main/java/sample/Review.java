@@ -2,22 +2,23 @@ package sample;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
 import java.io.Serializable;
 
 @JsonInclude(Include.NON_NULL)
-public class Reviews implements Serializable {
+public class Review implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     private int id;
-    private int productID;
+    private int productId;
     private String reviewer;
     private String text;
     private Rating rating;
 
-    public Reviews(int id, int productID, String reviewer, String text) {
+    public Review(int id, int productId, String reviewer, String text) {
         this.id = id;
-        this.productID = productID;
+        this.productId = productId;
         this.reviewer = reviewer;
         this.text = text;
     }
@@ -30,12 +31,12 @@ public class Reviews implements Serializable {
         this.id = id;
     }
 
-    public int getProductID() {
-        return productID;
+    public int getProductId() {
+        return productId;
     }
 
-    public void setProductID(int productID) {
-        this.productID = productID;
+    public void setProductId(int productId) {
+        this.productId = productId;
     }
 
     public String getReviewer() {
