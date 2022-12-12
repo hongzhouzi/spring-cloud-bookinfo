@@ -105,7 +105,7 @@ management.endpoints.web.exposure.include=*
 
 1. ##### 创建工作负载并通过环境变量指定网关地址
 
-   填写镜像：若没有构建镜像可以用 `kse/springcloud-bookinfo-productpage-v1:latest` demo ， 那么这儿我们也就填写对应的镜像地址。
+   填写镜像：若没有构建镜像可以用 `kubesphere/springcloud-bookinfo-productpage-v1:latest` demo ， 那么这儿我们也就填写对应的镜像地址。
 
    设置环境变量：（API_SERVER : http://springcloud-gateway.springcloud-demo.svc:8080）
 
@@ -153,7 +153,7 @@ details 提供了具体的书籍详情 API，我们可以通过 product id 获�
 
    命名为：details-v1。（**注意：在创建实例命名微服务时，名字中不要出现下划线，否则会出现找不该服务的问题。**）
 
-   填写镜像：若没有构建镜像可以用 `registry.cn-beijing.aliyuncs.com/kse/springcloud-bookinfo-datails-v1:v0.1.0` demo， 那么这儿我们也就填写对应的镜像地址。
+   填写镜像：若没有构建镜像可以用 `kubesphere/springcloud-bookinfo-datails-v1:v0.1.0` demo， 那么这儿我们也就填写对应的镜像地址。
 
    端口设置：设置8080端口
 
@@ -194,7 +194,7 @@ reviews 应用提供书籍评论相关的 API，可以通过配置开启是否�
 
    命名为：reviews-v1
 
-   填写镜像：用 `registry.cn-beijing.aliyuncs.com/kse/springcloud-bookinfo-reviews-v1:v0.1.0` demo， 那么这儿我们也就填写对应的镜像地址。
+   填写镜像：用 `kubesphere/springcloud-bookinfo-reviews-v1:v0.1.0` demo， 那么这儿我们也就填写对应的镜像地址。
 
    端口设置：设置8080端口
 
@@ -229,7 +229,7 @@ reviews-v2 用于演示灰度发布，相关 API 和 reviews-v1 一样，只是�
 
    命名为：reviews-v2
 
-   填写镜像：若没有构建镜像可以用`registry.cn-beijing.aliyuncs.com/kse/springcloud-bookinfo-reviews-v2:v0.1.0`demo。
+   填写镜像：若没有构建镜像可以用`kubesphere/springcloud-bookinfo-reviews-v2:v0.1.0`demo。
 
    端口设置：设置8080端口
 
